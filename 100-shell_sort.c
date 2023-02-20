@@ -35,7 +35,7 @@ void shell_sort(int *array, size_t size)
 	{
 		for (i = interval; i < size; i++)
 		{
-			j = 1;
+			j = i;
 			while  (j >= interval && array[j - interval] > array[j])
 			{
 				swap_ints(array + j, array + (j - interval));
